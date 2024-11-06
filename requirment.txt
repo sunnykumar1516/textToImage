@@ -1,0 +1,5 @@
+pinecone
+requests
+diffusers
+gradio
+python-dotenv
