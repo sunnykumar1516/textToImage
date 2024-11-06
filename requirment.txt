@@ -3,3 +3,4 @@ requests
 diffusers
 gradio
 python-dotenv
+pillow
