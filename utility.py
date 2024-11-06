@@ -1,11 +1,9 @@
 
 import requests
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
 
-secret_key = os.getenv("SECRET_KEY")
+secret_key = os.getenv("HF_TOKEN")
 #secret_key = "Bearer "+ secret_key
 
 API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-3.5-large"
