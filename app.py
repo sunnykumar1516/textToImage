@@ -1,17 +1,7 @@
 import gradio as gr
-import numpy as np
 import time
 import utility as s
 
-def fake_diffusion(steps):
-    rng = np.random.default_rng()
-    for i in range(steps):
-        time.sleep(1)
-        image = rng.random(size=(600, 600, 3))
-        yield image
-    image = np.ones((1000,1000,3), np.uint8)
-    image[:] = [255, 124, 0]
-    yield image
 
 with gr.Blocks() as demo:
     gr.Markdown("# I can generate image from text" )
