@@ -4,7 +4,7 @@ import os
 
 
 secret_key = os.getenv("HF_TOKEN")
-#secret_key = "Bearer "+ secret_key
+secret_key = "Bearer "+ secret_key
 
 API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-3.5-large"
 headers = {"Authorization": secret_key}
